@@ -19,6 +19,16 @@ public class Recipe {
     private String url;
     private String directions;
 
+    public String getEthnicity() {
+        return ethnicity;
+    }
+
+    public void setEthnicity(String ethnicity) {
+        this.ethnicity = ethnicity;
+    }
+
+    private String ethnicity;
+
 
     @OneToOne(cascade = CascadeType.ALL)
     private Notes notes;
